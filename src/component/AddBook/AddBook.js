@@ -78,7 +78,7 @@ const AddBook = () => {
                   required
                   onChange={handleChange}
                   id={authorId}
-                  autoComplete="on"
+                  autoComplete="off"
                 />
 
                 <label htmlFor={nameId}>Name</label>
@@ -89,7 +89,7 @@ const AddBook = () => {
                   required
                   onChange={handleChange}
                   id={nameId}
-                  autoComplete="on"
+                  autoComplete="off"
                 />
 
                 <label htmlFor={genreId}>Genre</label>
@@ -101,7 +101,7 @@ const AddBook = () => {
                   required
                   onChange={handleChange}
                   id={genreId}
-                  autoComplete="on"
+                  autoComplete="off"
                 />
 
                 <label htmlFor={isbnId}>ISBN</label>
@@ -113,7 +113,7 @@ const AddBook = () => {
                   required
                   onChange={handleChange}
                   id={isbnId}
-                  autoComplete="on"
+                  autoComplete="off"
                 />
 
                 <button type="submit" className={styles.btnAdd}>

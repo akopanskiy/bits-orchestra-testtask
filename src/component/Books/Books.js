@@ -8,7 +8,7 @@ const Books = () => {
 
   useEffect(() => {
     fetchAllBooks().then(res => setBooks(res.data));
-  }, []);
+  }, [books]);
 
   const deleteBook = id => {
     fetchDeleteBook(id).then(() => {
