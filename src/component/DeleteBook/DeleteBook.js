@@ -14,14 +14,18 @@ const DeleteBook = ({ deleteBook, id }) => {
 
   return (
     <>
-      <button type="button" onClick={toggleModal} className={styles.dltBtn}>
-        Delete
+      <button
+        type="button"
+        onClick={toggleModal}
+        className={styles.dltBtn}
+      >
+        <span className={styles.btnDeleteName}>Delete</span>
       </button>
       {showModal && (
         <Modal>
           <div className={styles.Modal_content}>
             <h2 className={styles.modalDeleteHead}>
-              Ви справді бажаєте видалити книгу?
+              Бажаєте видалити книгу?
             </h2>
             <button
               type="button"

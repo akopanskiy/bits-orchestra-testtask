@@ -1,23 +1,74 @@
-.transparent {
-  position: relative;
-  max-width: 400px;
-  padding: 60px 50px;
-  margin: 50px auto 0;
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  .btnAddBook {
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 10px;
+    width: 40px;
+    height: 40px;
+    background-image: url('../../images/btnAddBookImg.svg');
+    background-size: cover;
+    border-radius: 50%;
+    border: 1px solid blue;
+  }
+}
+@media screen and (min-width: 768px) {
+  .btnAddBook {
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 10px;
+    width: 40px;
+    height: 40px;
+    background-image: url('../../images/btnAddBookImg.svg');
+    background-size: cover;
+    border-radius: 50%;
+    border: 1px solid blue;
+  }
+}
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  .transparent {
+    position: relative;
+    max-width: 300px;
+    padding: 10px 5px;
+    margin: 10px auto 0;
+  }
+}
+@media screen and (min-width: 768px) {
+  .transparent {
+    position: relative;
+    max-width: 400px;
+    padding: 60px 50px;
+    margin: 50px auto 0;
+  }
 }
 
 .formInner {
   position: relative;
 }
-
-.formInner h3 {
-  position: relative;
-  margin-top: 0;
-  text-align: center;
-  color: rgb(56, 13, 245);
-  font-family: 'Roboto', sans-serif;
-  font-weight: 300;
-  font-size: 26px;
-  text-transform: uppercase;
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  .formInner h3 {
+    position: relative;
+    margin-top: 0;
+    text-align: center;
+    color: rgb(56, 13, 245);
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    font-size: 16px;
+    text-transform: uppercase;
+  }
+}
+@media screen and (min-width: 768px) {
+  .formInner h3 {
+    position: relative;
+    margin-top: 0;
+    text-align: center;
+    color: rgb(56, 13, 245);
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    font-size: 26px;
+    text-transform: uppercase;
+  }
 }
 
 .formInner label {
@@ -28,29 +79,63 @@
   text-transform: uppercase;
   font-size: 14px;
 }
-.formInner input {
-  display: block;
-  width: 100%;
-  padding: 0 15px;
-  margin: 10px 0 15px;
-  border-width: 0;
-  line-height: 40px;
-  border-radius: 20px;
-  color: white;
-  background: rgba(228, 26, 26, 0.2);
-  font-family: 'Roboto', sans-serif;
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  .formInner input {
+    display: block;
+    width: 160px;
+    padding: 0 15px;
+    margin: 10px 0 10px;
+    margin-right: auto;
+    margin-left: auto;
+    border-width: 0;
+    line-height: 30px;
+    border-radius: 20px;
+    color: white;
+    background: rgba(228, 26, 26, 0.2);
+    font-family: 'Roboto', sans-serif;
+  }
 }
-.btnClose {
-  position: absolute;
-  top: -110px;
-  left: 193%;
-  width: 20px;
-  height: 20px;
-  background-image: url('../../images/close.svg');
-  background-size: cover;
-  border-radius: 50%;
-  background-color: indianred;
-  border: 1px solid black;
+@media screen and (min-width: 768px) {
+  .formInner input {
+    display: block;
+    width: 100%;
+    padding: 0 15px;
+    margin: 10px 0 15px;
+    border-width: 0;
+    line-height: 40px;
+    border-radius: 20px;
+    color: white;
+    background: rgba(228, 26, 26, 0.2);
+    font-family: 'Roboto', sans-serif;
+  }
+}
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  .btnClose {
+    position: fixed;
+    top: 2px;
+    right: 2px;
+    width: 20px;
+    height: 20px;
+    background-image: url('../../images/close.svg');
+    background-size: cover;
+    border-radius: 50%;
+    background-color: indianred;
+    border: 1px solid black;
+  }
+}
+@media screen and (min-width: 768px) {
+  .btnClose {
+    position: absolute;
+    top: -110px;
+    left: 193%;
+    width: 20px;
+    height: 20px;
+    background-image: url('../../images/close.svg');
+    background-size: cover;
+    border-radius: 50%;
+    background-color: indianred;
+    border: 1px solid black;
+  }
 }
 .btnAdd {
   text-decoration: none;
@@ -64,6 +149,7 @@
   font-family: 'Montserrat', sans-serif;
   transition: 0.4s;
 }
+
 .btnAdd::after {
   content: '';
   position: absolute;
@@ -82,18 +168,37 @@
   width: calc(100% - 10px);
   height: calc(100% + 10px);
 }
-.Modal_content {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  min-height: 70%;
-  max-width: 60%;
-  width: 100%;
-  padding: 12px;
-  border-radius: 3px;
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  .Modal_content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-height: 70%;
+    max-width: 60%;
+    width: 100%;
+    padding: 12px;
+    border-radius: 3px;
 
-  background-image: url('../../images/modalAdd.jpg');
-  background-repeat: no-repeat;
-  background-size: cover;
+    background-image: url('../../images/modalAdd.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+}
+@media screen and (min-width: 768px) {
+  .Modal_content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    min-height: 70%;
+    max-width: 60%;
+    width: 100%;
+    padding: 12px;
+    border-radius: 3px;
+
+    background-image: url('../../images/modalAdd.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
 }

@@ -54,7 +54,7 @@ const EditBook = ({ book }) => {
   return (
     <>
       <button type="button" onClick={toggleModal} className={styles.editBtn}>
-        Edit
+        <span className={styles.btnEditName}>Edit</span>
       </button>
       {showModal && (
         <Modal>

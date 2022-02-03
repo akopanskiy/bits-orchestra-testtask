@@ -1,33 +1,47 @@
-.dltBtn {
-  padding: 3px 14px;
-  -webkit-box-shadow: rgba(0, 0, 0, 0.701961) 0px 5px 12px;
-  -webkit-transform-origin: 50% 1px;
-  -webkit-transition: all 0.15s ease-in-out;
-  background: #161616;
-  border-color: rgba(255, 255, 255, 0.027451) #ff8c39
-    rgba(255, 255, 255, 0.027451) rgba(255, 255, 255, 0.027451);
-  border-style: solid;
-  border-width: 1px 4px 1px 1px;
-  box-shadow: rgba(0, 0, 0, 0.701961) 0px 5px 12px;
-  color: rgb(241, 48, 14);
-  display: block;
-  width: 90px;
-  font-family: Open Sans, Sans-serif;
-  border-radius: 5px;
-  font-size: 13px;
-  letter-spacing: 1px;
-  text-shadow: rgb(0, 0, 0) 0px 1px 1px;
-  line-height: 20px;
-  position: relative;
-  /* margin: 20px auto; */
-  text-align: center;
-  text-decoration: none;
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  .dltBtn {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+
+    background-image: url('../../images/btnDeleteBookImg.svg');
+    background-size: cover;
+    border: 3px solid yellow;
+  }
 }
+@media screen and (min-width: 768px) {
+  .dltBtn {
+    padding: 3px 14px;
+    -webkit-box-shadow: rgba(0, 0, 0, 0.701961) 0px 5px 12px;
+    -webkit-transform-origin: 50% 1px;
+    -webkit-transition: all 0.15s ease-in-out;
+    background: #161616;
+    border-color: rgba(255, 255, 255, 0.027451) #ff8c39
+      rgba(255, 255, 255, 0.027451) rgba(255, 255, 255, 0.027451);
+    border-style: solid;
+    border-width: 1px 4px 1px 1px;
+    box-shadow: rgba(0, 0, 0, 0.701961) 0px 5px 12px;
+    color: rgb(241, 48, 14);
+    display: block;
+    width: 90px;
+    font-family: Open Sans, Sans-serif;
+    border-radius: 5px;
+    font-size: 13px;
+    letter-spacing: 1px;
+    text-shadow: rgb(0, 0, 0) 0px 1px 1px;
+    line-height: 20px;
+    position: relative;
+    /* margin: 20px auto; */
+    text-align: center;
+    text-decoration: none;
+  }
+}
+
 .dltBtn:hover {
   cursor: pointer;
   opacity: 0.9;
   border-width: 1px 7px 1px 1px;
-  background: rgb(207, 204, 32);
+  background: red;
 }
 .dltBtn:active {
   -webkit-box-shadow: inset rgba(0, 0, 0, 0.701961) 0px 7px 12px,
@@ -35,24 +49,57 @@
   text-shadow: rgb(0, 0, 0) 0px -2px 1px;
   margin-top: 1px;
 }
-.Modal_content {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  min-height: 40%;
-  max-width: 30%;
-  width: 100%;
-  padding: 12px;
-  border-radius: 3px;
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  .Modal_content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    min-height: 100px;
+    max-width: 200px;
+    width: 100%;
+    padding: 12px;
+    border-radius: 3px;
 
-  background-image: url('../../images/modalDelete.jpg');
-  background-repeat: no-repeat;
-  background-size: cover;
+    background-image: url('../../images/modalDelete.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
 }
-.modalDeleteHead {
-  color: rgb(255, 0, 0);
-  font-weight: 900;
+@media screen and (min-width: 768px) {
+  .Modal_content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    min-height: 40%;
+    max-width: 30%;
+    width: 100%;
+    padding: 12px;
+    border-radius: 3px;
+
+    background-image: url('../../images/modalDelete.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+}
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  .modalDeleteHead {
+    display: flex;
+    justify-content: center;
+    color: rgb(255, 0, 0);
+    font-weight: 900;
+    font-size: 15px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .modalDeleteHead {
+    display: flex;
+    justify-content: center;
+    color: rgb(255, 0, 0);
+    font-weight: 900;
+  }
 }
 .btnDeleteYes {
   width: 85px;
@@ -116,4 +163,15 @@
   border-color: green;
   width: calc(100% - 10px);
   height: calc(100% + 10px);
+}
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  .btnDeleteName {
+    color: none;
+    opacity: 0;
+  }
+}
+@media screen and (min-width: 768px) {
+  .btnDeleteName {
+    color: none;
+  }
 }

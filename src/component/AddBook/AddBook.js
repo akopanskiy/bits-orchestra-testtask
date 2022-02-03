@@ -59,9 +59,11 @@ const AddBook = () => {
 
   return (
     <>
-      <button type="button" onClick={toggleModal}>
-        Додати книгу
-      </button>
+      <div >
+      <button type="button" onClick={toggleModal} className={styles.btnAddBook}>
+       
+        </button>
+        </div>
       {showModal && (
         <Modal>
           <div className={styles.Modal_content}>

@@ -25,8 +25,8 @@ const Books = () => {
             <th>Автор</th>
             <th>Назва книги</th>
             <th>Жанр</th>
-            <th>ISBN</th>
-            <th>Instruments</th>
+            <th className={styles.isbnMobile}>ISBN</th>
+            <th>Tools</th>
           </tr>
         </thead>
         <tbody>
