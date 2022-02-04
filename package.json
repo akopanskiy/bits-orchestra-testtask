@@ -23,9 +23,7 @@
     "eject": "react-scripts eject",
     "prepare": "husky install",
     "predeploy": "npm run build",
-    "deploy": "netlify deploy -p",
-    "server": "json-server --watch db.json",
-    "all": "concurrently \"server\" \"start\""
+    "deploy": "netlify deploy -p"
   },
   "eslintConfig": {
     "extends": [
